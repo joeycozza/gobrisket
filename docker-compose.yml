@@ -1,0 +1,10 @@
+version: '2'
+services:
+  postgres:
+    container_name: postgresbrisket
+    image: postgres
+    ports:
+      - "5555:5432"
+    environment:
+      - POSTGRES_USER=cozza
+      - POSTGRES_PASSWORD=brisketislovebrisketislife
