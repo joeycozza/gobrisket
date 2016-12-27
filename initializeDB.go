@@ -7,7 +7,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
-func main() {
+func initialize() {
 	db, err := sql.Open("postgres", postgresPath)
 	if err != nil {
 		log.Fatal(err)
@@ -23,7 +23,14 @@ func main() {
 		name string
 	)
 
-	rows, err := db.Query("select id, name from test")
+	rows, err := db.Query(`CREATE TABLE "public"."expense" (
+    "id" serial,
+    "item" text NOT NULL,
+    "cost" numeric NOT NULL,
+    "reimbursed" bool NOT NULL DEFAULT 'false',
+    "purchase_date" date NOT NULL DEFAULT now(),
+    PRIMARY KEY ("id")
+		);`)
 	if err != nil {
 		log.Fatal(err)
 	}
