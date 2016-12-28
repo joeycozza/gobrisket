@@ -6,12 +6,14 @@ import (
 	"github.com/bahlo/goat"
 )
 
+//User totally rocks
 type User struct {
 	Name string `json:"name"`
 	Age  int    `json:"age"`
 }
 
 func main() {
+	Initialize()
 	r := goat.New()
 	r.Get("/users", "users_url", usersHandler)
 	r.Run(":3000")
