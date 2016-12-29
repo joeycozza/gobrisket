@@ -91,11 +91,11 @@ func Initialize() {
 									INSERT INTO brisket (price, weight_pre_trim, weight_post_trim, weight_post_cook, rub, sous_vide_time, sous_vide_temp, smoker_time, smoker_temp, final_temp, meta)
 									VALUES
 										(2.69, 12.8, NULL, NULL, 'Salt, Pepper, Liquid Smoke', 36, 155, 2.33, 300, 195, '{"notes":"Bark was not great. Pepper not ground enough"}'),
-										(2.69, 18, 13.6, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3.5, 300, 160, '{"notes":"Bark was much better. Did an ice bath so we could smoke it longer"}'),
-										(2.99, 9.47, 7.15, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt, INSERT BEEF RUB NAME HERE', 24, 155, 3, 300, 175, '{"notes":"The flat was sous vided for 24 hours and we could not tell a difference really. Had it for Christmas Dinner and it was great. A little too much curing salt though. Also used a sweet beef rub that Karissa really liked, but should have used more pepper in conjunction with it"}'),
+										(2.69, 18, 13.6, 9, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3.5, 300, 160, '{"notes":"Bark was much better. Did an ice bath so we could smoke it longer"}'),
+										(2.99, 9.47, 7.15, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt, The Slabs Beef Rub', 24, 155, 3, 300, 175, '{"notes":"The flat was sous vided for 24 hours and we could not tell a difference really. Had it for Christmas Dinner and it was great. A little too much curing salt though. Also used a sweet beef rub that Karissa really liked, but should have used more pepper in conjunction with it"}'),
 										(2.99, 13.88, 10.28, 6.1, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3, 300, 175, '{"notes":""}'),
-										(2.99, 11.62, 9.32, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3, 300, 175, '{"notes":""}'),
-										(2.99, 11.77, 9.55, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3, 300, 175, '{"notes":""}'),
+										(2.99, 11.62, 9.32, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3, 300, 175, '{"notes":"Dan said overall it was great. He messed up on the cutting he felt, but people were fighting over the bark."}'),
+										(2.99, 11.77, 9.55, NULL, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3, 300, 175, '{"notes":"Brandon said his brother-in-law was impressed with the smoke ring but the pepper was a little too strong for him. Brandon said the pepper was perfect"}'),
 										(2.69, 14.08, 10.28, 6.6, 'Salt, Pepper, Liquid Smoke, Curing Salt', 36, 155, 3, 200, 175, '{"notes":""}')
 										;
 										
